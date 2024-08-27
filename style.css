@@ -43,12 +43,19 @@ h1 {
     background-color: transparent !important;
     border: none !important;
     padding: 0 !important;
+    width: 100% !important; /* Make the search box take full width */
 }
 
 .gsc-search-button input.gsc-search-button {
-    background-color: #e94057 !important; /* Example: Match the gradient color */
+    background-color: #e94057 !important;
     border: none !important;
     color: #fff !important;
+}
+
+.gsc-input {
+    width: 100% !important; /* Make the input field wider */
+    padding: 15px !important; /* Add more padding to the input field */
+    font-size: 1.2em !important; /* Increase the font size */
 }
 
 /* Footer Styles */
