@@ -7,14 +7,14 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure footer stays at the bottom */
+    min-height: 100vh;
 }
 
 .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
-    flex: 1; /* Allow main content to take up available space */
+    flex: 1;
 }
 
 /* Header Styles */
@@ -35,32 +35,40 @@ h1 {
     padding: 30px;
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Google CSE Styling Overrides */
+.gsc-control-cse {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.gsc-search-button input.gsc-search-button {
+    background-color: #e94057 !important; /* Example: Match the gradient color */
+    border: none !important;
+    color: #fff !important;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.1); /* Match the search container's background */
+    background-color: rgba(0, 0, 0, 0.1);
     margin-top: 30px;
 }
 
 /* Accessibility Considerations */
 body {
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6;
 }
 
 h1 {
-    margin-bottom: 0.5em; /* Add spacing for better visual separation */
+    margin-bottom: 0.5em;
 }
 
 /* Performance Optimizations */
 * {
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
-
-/* Additional Styling (Optional) */
-.gcse-search {
-    /* Customize the appearance of the search box and results */
+    box-sizing: border-box;
 }
