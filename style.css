@@ -1,34 +1,66 @@
+/* General Styles */
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
+    background: linear-gradient(to right, #f27121, #e94057, #8a2387);
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer stays at the bottom */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1; /* Allow main content to take up available space */
+}
+
+/* Header Styles */
+header {
     text-align: center;
-    padding: 1em 0;
+    margin-bottom: 30px;
 }
 
-main {
-    padding: 20px;
+h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Search Container Styles */
 .search-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Match the search container's background */
+    margin-top: 30px;
+}
+
+/* Accessibility Considerations */
+body {
+    line-height: 1.6; /* Improve readability */
+}
+
+h1 {
+    margin-bottom: 0.5em; /* Add spacing for better visual separation */
+}
+
+/* Performance Optimizations */
+* {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Additional Styling (Optional) */
+.gcse-search {
+    /* Customize the appearance of the search box and results */
 }
