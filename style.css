@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #121212; /* Dark background */
+    background: #121212; 
     color: #eee;
     display: flex;
     flex-direction: column;
@@ -27,23 +27,23 @@ header {
 h1 {
     font-size: 2.5em;
     font-weight: 600;
-    color: #e94057; /* Accent color for the title */
+    color: #e94057;
 }
 
 /* Search Container Styles */
 .search-container {
-    background-color: #1f1f1f; /* Darker container background */
+    background-color: #1f1f1f; 
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 /* Google CSE Styling Overrides */
-.gsc-control-cse {
+.gsc-control-cse, .gsc-control-cse * { /* Target all elements within .gsc-control-cse */
     background-color: transparent !important;
     border: none !important;
     padding: 0 !important;
-    width: 100% !important; 
+    width: auto !important; /* Let the search box size naturally */
 }
 
 .gsc-search-button input.gsc-search-button {
@@ -56,12 +56,11 @@ h1 {
 }
 
 .gsc-input {
-    width: calc(100% - 140px) !important; 
     padding: 15px !important;
     font-size: 1.2em !important;
     border: none !important;
     border-radius: 5px 0 0 5px !important;
-    background-color: #2d2d2d; /* Dark input background */
+    background-color: #2d2d2d; 
     color: #eee;
 }
 
@@ -70,16 +69,16 @@ h1 {
 .gsc-results .gs-image-box,
 .gsc-results .gs-webResult .gs-result,
 .gsc-results .gsc-expansionArea {
-    background-color: #2d2d2d !important; /* Dark result backgrounds */
+    background-color: #2d2d2d !important; 
 }
 
 .gsc-results .gsc-webResult a {
-    color: #eee !important; /* Light result link color */
-    font-size: 1.1em !important; /* Increase result font size */
+    color: #eee !important; 
+    font-size: 1.1em !important; 
 }
 
 .gsc-results .gs-snippet {
-    color: #b0b0b0 !important; /* Lighter snippet color */
+    color: #b0b0b0 !important;
 }
 
 /* Footer Styles */
@@ -88,7 +87,7 @@ footer {
     padding: 10px 0;
     background-color: #1f1f1f;
     margin-top: 30px;
-    color: #b0b0b0; /* Light footer text */
+    color: #b0b0b0; 
 }
 
 /* Accessibility Considerations */
